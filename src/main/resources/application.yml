@@ -63,4 +63,4 @@ resilience4j:
         timeout-duration: 5s
 logging:
   level:
-    io.github.resilience4j: DEBUG
+    '[io.github.resilience4j]': DEBUG
