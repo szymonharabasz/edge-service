@@ -81,3 +81,6 @@ resilience4j:
 logging:
   level:
     '[io.github.resilience4j]': DEBUG
+
+polar:
+  greeting: Welcome to polar book catalog edge service!

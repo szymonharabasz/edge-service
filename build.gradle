@@ -12,6 +12,12 @@ repositories {
 	mavenCentral()
 }
 
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
 ext {
 	set('springCloudVersion', "2021.0.7")
 	set('testContainersVersion', "1.17.3")
@@ -24,6 +30,7 @@ dependencies {
 	implementation 'org.springframework.session:spring-session-data-redis'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.testcontainers:junit-jupiter'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 }
 
 dependencyManagement {
