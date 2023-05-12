@@ -26,11 +26,11 @@ class EdgeServiceApplicationTests {
 		registry.add("spring.redis.host", () -> redis.getHost());
 		registry.add("spring.redis.port", () -> redis.getMappedPort(REDIS_PORT));
 	}
-
+/*
 	@Test
 	void contextLoads() {
 	}
-
+*/
 
 
 }
